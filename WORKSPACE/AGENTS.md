@@ -8,48 +8,43 @@ Hermes loads SOUL.md from the active Hermes profile home.
 ## Structure
 
 ```txt
-archive/
-biography/
-interviews/
+shared/
+biographer/
 editorial/
-reports/
-sources/
-timelines/
-schemas/
 ```
 
 ## Canonical Files
 
 ```txt
-archive/daily_entries.md
-archive/weekly_issues.md
-biography/living_biography.md
-biography/private_self_model.md
-biography/public_bio.md
-interviews/questions_for_user.md
-interviews/interview_logs.md
+shared/archive/daily_entries.md
+shared/archive/weekly_issues.md
+shared/sources/source_index.md
+shared/sources/unresolved_claims.md
+shared/sources/conflicting_records.md
+shared/timelines/master_timeline.md
+shared/timelines/project_timeline.md
+biographer/living_biography.md
+biographer/private_self_model.md
+biographer/interview_logs.md
+biographer/questions_for_user.md
+biographer/weekly_self_model_update.md
+editorial/public_bio.md
 editorial/public_safe_claims.md
-reports/weekly_self_model_update.md
-sources/source_index.md
-sources/unresolved_claims.md
-sources/conflicting_records.md
-timelines/master_timeline.md
-timelines/project_timeline.md
+editorial/issue_workbench.md
 ```
 
 ## Operating Rules
 
-- raw records go in `sources/`
-- interpretive summaries go in `biography/`
-- dated events go in `timelines/`
-- open interview questions go in `interviews/questions_for_user.md`
-- interview traces go in `interviews/interview_logs.md`
-- weekly reflective summaries go in `reports/`
-- public-safe material goes in `editorial/`
+- shared records of truth go in `shared/`
+- archive artifacts live in `shared/archive/`
+- raw and unresolved source material lives in `shared/sources/`
+- dated cross-role continuity lives in `shared/timelines/`
+- private synthesis and interview work live in `biographer/`
+- public-facing drafting and issue assembly live in `editorial/`
 - do not treat unconfirmed inference as fact
 - do not treat memory as source evidence
 - do not publish private material by default
 
 ## FaxMachine Rule
 
-This workspace supports a biographer and editorial system, not a productivity coach.
+This workspace supports separate `biographer` and `editorial` role workspaces over a shared archive layer, not a productivity coach.

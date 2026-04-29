@@ -16,34 +16,31 @@ Make the workspace immediately usable without relying on hidden setup knowledge.
 1. Inspect the current workspace.
 2. Confirm that `AGENTS.md` is present as workspace context.
 3. Confirm that these folders exist:
-   - `archive`
-   - `biography`
-   - `interviews`
+   - `shared`
+   - `biographer`
    - `editorial`
-   - `reports`
-   - `sources`
-   - `timelines`
-   - `schemas`
 4. Confirm that these canonical files exist:
-   - `archive/daily_entries.md`
-   - `archive/weekly_issues.md`
-   - `biography/living_biography.md`
-   - `biography/private_self_model.md`
-   - `biography/public_bio.md`
-   - `interviews/questions_for_user.md`
-   - `interviews/interview_logs.md`
+   - `shared/archive/daily_entries.md`
+   - `shared/archive/weekly_issues.md`
+   - `shared/sources/source_index.md`
+   - `shared/sources/unresolved_claims.md`
+   - `shared/sources/conflicting_records.md`
+   - `shared/timelines/master_timeline.md`
+   - `shared/timelines/project_timeline.md`
+   - `biographer/living_biography.md`
+   - `biographer/private_self_model.md`
+   - `biographer/interview_logs.md`
+   - `biographer/questions_for_user.md`
+   - `biographer/weekly_self_model_update.md`
+   - `editorial/public_bio.md`
    - `editorial/public_safe_claims.md`
-   - `reports/weekly_self_model_update.md`
-   - `sources/source_index.md`
-   - `sources/unresolved_claims.md`
-   - `sources/conflicting_records.md`
-   - `timelines/master_timeline.md`
-   - `timelines/project_timeline.md`
+   - `editorial/issue_workbench.md`
 5. Create any missing canonical file as a Markdown file with one H1 heading matching its purpose.
 6. Do not write user-specific identity facts into `SOUL.md`.
 7. Explain:
    - what the current workspace is for
    - which Hermes-owned files define behavior
+   - how the `shared`, `biographer`, and `editorial` layers relate
    - which provider is only a voice surface
    - what source should be ingested first
 

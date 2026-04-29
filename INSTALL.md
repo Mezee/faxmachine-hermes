@@ -54,3 +54,9 @@ faxmachine chat
 Then give Hermes the bootstrap prompt from `BOOTSTRAP_PROMPT.md`.
 
 That prompt tells Hermes to use the `faxmachine-bootstrap` skill so initialization is a Hermes capability, not a manual ritual.
+
+The initialized workspace should contain:
+
+- a shared archive layer
+- a `biographer` role workspace
+- an `editorial` role workspace

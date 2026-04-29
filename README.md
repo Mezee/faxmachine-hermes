@@ -41,11 +41,12 @@ flowchart TD
 | Feature | How It Is Used |
 |---|---|
 | Profiles | Separate `biographer` and `editorial` roles |
+| Role Workspaces | Keeps biographer and editorial working state separate while sharing the archive layer |
 | SOUL | Defines the baseline stance of the archival intelligence |
 | Memory | Holds stable operating rules and bounded user preferences |
 | Bootstrap Skill | Initializes the workspace and verifies canonical files |
 | Skills | Defines how Hermes authors one interview session |
-| Workspace Context | Keeps the archive, biography, interview, editorial, and timeline files legible |
+| Workspace Context | Keeps shared archive truth separate from role-specific work |
 | Tools / Providers | Lets Hermes use voice, calendar, and Discord without those providers owning the behavior |
 
 ## Core Loop
@@ -68,32 +69,28 @@ HERMES_HOME/
 
 WORKSPACE/
   AGENTS.md
-  archive/
-  biography/
-  interviews/
+  shared/
+  biographer/
   editorial/
-  reports/
-  sources/
-  timelines/
-  schemas/
 ```
 
 ## Canonical Files
 
-- `WORKSPACE/archive/daily_entries.md`
-- `WORKSPACE/archive/weekly_issues.md`
-- `WORKSPACE/biography/living_biography.md`
-- `WORKSPACE/biography/private_self_model.md`
-- `WORKSPACE/biography/public_bio.md`
-- `WORKSPACE/interviews/questions_for_user.md`
-- `WORKSPACE/interviews/interview_logs.md`
+- `WORKSPACE/shared/archive/daily_entries.md`
+- `WORKSPACE/shared/archive/weekly_issues.md`
+- `WORKSPACE/shared/sources/source_index.md`
+- `WORKSPACE/shared/sources/unresolved_claims.md`
+- `WORKSPACE/shared/sources/conflicting_records.md`
+- `WORKSPACE/shared/timelines/master_timeline.md`
+- `WORKSPACE/shared/timelines/project_timeline.md`
+- `WORKSPACE/biographer/living_biography.md`
+- `WORKSPACE/biographer/private_self_model.md`
+- `WORKSPACE/biographer/interview_logs.md`
+- `WORKSPACE/biographer/questions_for_user.md`
+- `WORKSPACE/biographer/weekly_self_model_update.md`
+- `WORKSPACE/editorial/public_bio.md`
 - `WORKSPACE/editorial/public_safe_claims.md`
-- `WORKSPACE/reports/weekly_self_model_update.md`
-- `WORKSPACE/sources/source_index.md`
-- `WORKSPACE/sources/unresolved_claims.md`
-- `WORKSPACE/sources/conflicting_records.md`
-- `WORKSPACE/timelines/master_timeline.md`
-- `WORKSPACE/timelines/project_timeline.md`
+- `WORKSPACE/editorial/issue_workbench.md`
 
 ## Quick Start
 
@@ -120,6 +117,16 @@ Hermes owns:
 
 Providers do not own that behavior.
 
+## Role Workspace Model
+
+FaxMachine uses:
+
+- a shared archive layer for durable truth
+- a `biographer` workspace for private synthesis and interview work
+- an `editorial` workspace for public drafting and issue assembly
+
+This keeps the real work between the two roles while letting both operate over the same archive substrate.
+
 ## Providers
 
 - ElevenLabs: voice surface
@@ -141,14 +148,9 @@ graph LR
     B --> B2["memories/"]
     B --> B3["skills/"]
 
-    C --> C1["archive/"]
-    C --> C2["biography/"]
-    C --> C3["interviews/"]
-    C --> C4["editorial/"]
-    C --> C5["reports/"]
-    C --> C6["sources/"]
-    C --> C7["timelines/"]
-    C --> C8["schemas/"]
+    C --> C1["shared/"]
+    C --> C2["biographer/"]
+    C --> C3["editorial/"]
 ```
 
 ## Why This Is Different
