@@ -43,6 +43,7 @@ flowchart TD
 | Profiles | Separate `biographer` and `editorial` roles |
 | SOUL | Defines the baseline stance of the archival intelligence |
 | Memory | Holds stable operating rules and bounded user preferences |
+| Bootstrap Skill | Initializes the workspace and verifies canonical files |
 | Skills | Defines how Hermes authors one interview session |
 | Workspace Context | Keeps the archive, biography, interview, editorial, and timeline files legible |
 | Tools / Providers | Lets Hermes use voice, calendar, and Discord without those providers owning the behavior |
@@ -102,6 +103,10 @@ faxmachine chat
 ```
 
 Then use the prompt in [BOOTSTRAP_PROMPT.md](./BOOTSTRAP_PROMPT.md).
+
+The bootstrap flow uses a real Hermes skill:
+
+- `HERMES_HOME/skills/faxmachine-bootstrap/SKILL.md`
 
 ## What Hermes Owns
 
