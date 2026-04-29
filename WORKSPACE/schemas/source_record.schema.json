@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FaxMachine Source Record",
+  "type": "object",
+  "properties": {
+    "sourceId": { "type": "string" },
+    "sourceType": { "type": "string" },
+    "dateCreated": { "type": "string" },
+    "dateIngested": { "type": "string" },
+    "sensitivity": { "type": "string" },
+    "confidence": { "type": "string" },
+    "summary": { "type": "string" }
+  },
+  "required": ["sourceId", "sourceType"]
+}
