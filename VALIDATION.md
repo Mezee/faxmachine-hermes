@@ -27,3 +27,4 @@ This repo is designed as a Hermes bootstrap package.
 - workspace is concrete and inspectable
 - workspace initialization is a Hermes skill, not only a manual prompt
 - biographer and editorial working state are separated from the shared archive layer
+- claimed user outcomes are mapped in `docs/faxmachine-capability-map.md`

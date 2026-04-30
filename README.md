@@ -131,6 +131,15 @@ FaxMachine uses:
 
 This keeps the real work between the two roles while letting both operate over the same archive substrate.
 
+## Capability Map
+
+See [docs/faxmachine-capability-map.md](./docs/faxmachine-capability-map.md) for the parity map between:
+
+- claimed user outcomes
+- Hermes capability paths
+- workspace surfaces
+- provider roles
+
 ## Shared Loop State
 
 FaxMachine also keeps a small resumable state layer:
