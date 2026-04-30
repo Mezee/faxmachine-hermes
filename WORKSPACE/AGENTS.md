@@ -16,8 +16,11 @@ editorial/
 ## Canonical Files
 
 ```txt
+context.md
+shared/reports/current_loop_state.md
 shared/archive/daily_entries.md
 shared/archive/weekly_issues.md
+shared/archive/archive_queue.md
 shared/sources/source_index.md
 shared/sources/unresolved_claims.md
 shared/sources/conflicting_records.md
@@ -28,6 +31,7 @@ biographer/private_self_model.md
 biographer/interview_logs.md
 biographer/questions_for_user.md
 biographer/weekly_self_model_update.md
+biographer/current_session_brief.md
 editorial/public_bio.md
 editorial/public_safe_claims.md
 editorial/issue_workbench.md
@@ -37,9 +41,11 @@ editorial/issue_workbench.md
 
 - shared records of truth go in `shared/`
 - archive artifacts live in `shared/archive/`
+- shared current loop state lives in `context.md` and `shared/reports/current_loop_state.md`
 - raw and unresolved source material lives in `shared/sources/`
 - dated cross-role continuity lives in `shared/timelines/`
 - private synthesis and interview work live in `biographer/`
+- the active interview handoff lives in `biographer/current_session_brief.md`
 - public-facing drafting and issue assembly live in `editorial/`
 - do not treat unconfirmed inference as fact
 - do not treat memory as source evidence

@@ -78,6 +78,9 @@ WORKSPACE/
 
 - `WORKSPACE/shared/archive/daily_entries.md`
 - `WORKSPACE/shared/archive/weekly_issues.md`
+- `WORKSPACE/shared/archive/archive_queue.md`
+- `WORKSPACE/shared/reports/current_loop_state.md`
+- `WORKSPACE/context.md`
 - `WORKSPACE/shared/sources/source_index.md`
 - `WORKSPACE/shared/sources/unresolved_claims.md`
 - `WORKSPACE/shared/sources/conflicting_records.md`
@@ -88,6 +91,7 @@ WORKSPACE/
 - `WORKSPACE/biographer/interview_logs.md`
 - `WORKSPACE/biographer/questions_for_user.md`
 - `WORKSPACE/biographer/weekly_self_model_update.md`
+- `WORKSPACE/biographer/current_session_brief.md`
 - `WORKSPACE/editorial/public_bio.md`
 - `WORKSPACE/editorial/public_safe_claims.md`
 - `WORKSPACE/editorial/issue_workbench.md`
@@ -126,6 +130,17 @@ FaxMachine uses:
 - an `editorial` workspace for public drafting and issue assembly
 
 This keeps the real work between the two roles while letting both operate over the same archive substrate.
+
+## Shared Loop State
+
+FaxMachine also keeps a small resumable state layer:
+
+- `WORKSPACE/context.md`
+- `WORKSPACE/shared/reports/current_loop_state.md`
+- `WORKSPACE/biographer/current_session_brief.md`
+- `WORKSPACE/shared/archive/archive_queue.md`
+
+These files let Hermes resume the daily loop without depending on hidden scratch context.
 
 ## Providers
 

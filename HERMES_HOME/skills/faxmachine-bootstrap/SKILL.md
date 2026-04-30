@@ -22,16 +22,20 @@ Make the workspace immediately usable without relying on hidden setup knowledge.
 4. Confirm that these canonical files exist:
    - `shared/archive/daily_entries.md`
    - `shared/archive/weekly_issues.md`
+   - `shared/archive/archive_queue.md`
+   - `shared/reports/current_loop_state.md`
    - `shared/sources/source_index.md`
    - `shared/sources/unresolved_claims.md`
    - `shared/sources/conflicting_records.md`
    - `shared/timelines/master_timeline.md`
    - `shared/timelines/project_timeline.md`
+   - `context.md`
    - `biographer/living_biography.md`
    - `biographer/private_self_model.md`
    - `biographer/interview_logs.md`
    - `biographer/questions_for_user.md`
    - `biographer/weekly_self_model_update.md`
+   - `biographer/current_session_brief.md`
    - `editorial/public_bio.md`
    - `editorial/public_safe_claims.md`
    - `editorial/issue_workbench.md`
